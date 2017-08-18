@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  get 'stickers/index'
+  root to: 'stickers#index'
 end
