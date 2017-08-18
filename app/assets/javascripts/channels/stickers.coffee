@@ -8,6 +8,7 @@ App.stickers = App.cable.subscriptions.create "StickersChannel",
   received: (data) ->
     # Called when there's incoming data on the websocket for this channel
     console.log "Received: ", data
+    $('body').append(data.sticker)
 
   stick: (x, y) ->
     @perform 'stick', x: x, y: y
