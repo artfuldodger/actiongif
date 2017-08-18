@@ -1,5 +1,5 @@
 class RandomStickerUrl
-  ENDPOINT = 'http://api.giphy.com/v1/stickers/random?api_key=dc6zaTOxFJmzC'
+  ENDPOINT = 'http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC'
 
   def self.find
     new.find
